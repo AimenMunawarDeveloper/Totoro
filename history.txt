@@ -1,0 +1,16 @@
+
+Pomodoro,25 min,0 sec
+Small Break,5 min,0 sec
+Pomodoro,25 min,0 sec
+Small Break,5 min,0 sec
+Pomodoro,25 min,0 sec
+Small Break,5 min,0 sec
+Pomodoro,25 min,0 sec
+Small Break,5 min,0 sec
+Pomodoro,25 min,0 sec
+Small Break,5 min,0 sec
+Pomodoro,25 min,0 sec
+Small Break,5 min,0 sec
+Pomodoro,25 min,0 sec
+Long Break,30 min,0 sec
+Pomodoro,25 min,0 sec
