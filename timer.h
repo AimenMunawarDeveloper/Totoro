@@ -82,22 +82,18 @@ void completeTimer() {
         if (currentTimerType == 0) {
             writeDefaultPomodoro();// to write 25 mins pomodoro in history.txt
             // if 25 min work pomodoro complete start break 5 minutes timer
-            printf("25 complete entered");
             printf("Time's over - time for a 5 minute break!!!");
             PomodoroCounter++;// to indicate one pomodoro completed
             currentTimerType = 2;// 2 denotes 5 min break
             return;
         }
         else if (currentTimerType == 1) {
-            writeLongBreak();
-            printf("30 complete entered");
-            // to write 30 mins break in history.txt
+            writeLongBreak();// to write 30 mins break in history.txt
             currentTimerType = 0;// 0 denotes 25 mins pomodoro
             return;
         } else if (currentTimerType == 2) {
             writeShortBreak();// to write 5 mins break in history.txt
             // if 5 minutes break finished then pomodoro start of work 25 minutes
-            printf("5 complete entered");
             printf("Time's over - time for a 25 minute work!!!");
             currentTimerType = 0;// 0 denotes 25 mins pomodoro
             return;
@@ -158,7 +154,7 @@ int Custom_timer(void) {
 
 // timer for 25 min
 int t_25min() {
-    int seconds = 5, s;
+    int secs = 1500, sec;
     time_t t;// time_t is the  data type used to represent simple calendar time
     struct tm *tm;
     /* to create a structure pointer (tm) to a structure named (tm) present in time.h header file
@@ -166,13 +162,13 @@ int t_25min() {
     tm = localtime(&t);
     /* The localtime function is used to fill the struct (tm) with values that represents corresponding  local time\
      * &t is a pointer to a time_t value representing a calendar time.*/
-    s = seconds;
-    while (seconds > 0) {
+    sec = secs;
+    while (secs > 0) {
 
 
-        tm->tm_min = s / 60;
+        tm->tm_min = sec / 60;
         // Arrow operator here is used to access element (tm_min) of the structure (tm) in time.h header file
-        tm->tm_sec = s - (tm->tm_min * 60);
+        tm->tm_sec = sec - (tm->tm_min * 60);
         /* Arrow operator here is used to access element (tm_min,tm_sec) of the structure (tm) in time.h header file
         *  subtract seconds that are multiples of 60 and the remaining seconds are the seconds part of time*/
 
@@ -181,8 +177,8 @@ int t_25min() {
          * and converts the values of that structure into time_t values according to local time zone*/
 
         printf("%02d:%02d\n", tm->tm_min, tm->tm_sec);// to print current minutes and seconds
-        s--;
-        seconds--;
+        sec--;
+        secs--;
         wait(1);// to call time delay function
     }
     completeTimer();
@@ -191,7 +187,7 @@ int t_25min() {
 
 //timer for 5 min
 int t_5min() {
-    int seconds = 3, s;
+    int secs = 300, sec;
     time_t t;// time_t is the  data type used to represent simple calendar time
     struct tm *tm;
     /* to create a structure pointer (tm) to a structure named (tm) present in time.h header file
@@ -199,13 +195,13 @@ int t_5min() {
     tm = localtime(&t);
     /* The localtime function is used to fill the struct (tm) with values that represents corresponding  local time\
      * &t is a pointer to a time_t value representing a calendar time.*/
-    s = seconds;
-    while (seconds > 0) {
+    sec = secs;
+    while (secs > 0) {
 
 
-        tm->tm_min = s / 60;
+        tm->tm_min = sec / 60;
         // Arrow operator here is used to access element (tm_min) of the structure (tm) in time.h header file
-        tm->tm_sec = s - (tm->tm_min * 60);
+        tm->tm_sec = sec - (tm->tm_min * 60);
         /* Arrow operator here is used to access element (tm_min,tm_sec) of the structure (tm) in time.h header file
         *  subtract seconds that are multiples of 60 and the remaining seconds are the seconds part of time*/
 
@@ -214,8 +210,8 @@ int t_5min() {
          * and converts the values of that structure into time_t values according to local time zone*/
 
         printf("%02d:%02d\n", tm->tm_min, tm->tm_sec);// to print current minutes and seconds
-        s--;
-        seconds--;
+        sec--;
+        secs--;
         wait(1);// to call time delay function
     }
     completeTimer();
@@ -224,7 +220,7 @@ int t_5min() {
 
 // timer for 30 min
 int t_30min() {
-    int seconds = 8, s;
+    int secs = 1800, sec;
     time_t t;// time_t is the  data type used to represent simple calendar time
     struct tm *tm;
     /* to create a structure pointer (tm) to a structure named (tm) present in time.h header file
@@ -232,13 +228,13 @@ int t_30min() {
     tm = localtime(&t);
     /* The localtime function is used to fill the struct (tm) with values that represents corresponding  local time\
      * &t is a pointer to a time_t value representing a calendar time.*/
-    s = seconds;
-    while (seconds > 0) {
+    sec = secs;
+    while (secs > 0) {
 
 
-        tm->tm_min = s / 60;
+        tm->tm_min = sec / 60;
         // Arrow operator here is used to access element (tm_min) of the structure (tm) in time.h header file
-        tm->tm_sec = s - (tm->tm_min * 60);
+        tm->tm_sec = sec- (tm->tm_min * 60);
         /* Arrow operator here is used to access element (tm_min,tm_sec) of the structure (tm) in time.h header file
         *  subtract seconds that are multiples of 60 and the remaining seconds are the seconds part of time*/
 
@@ -247,8 +243,8 @@ int t_30min() {
          * and converts the values of that structure into time_t values according to local time zone*/
 
         printf("%02d:%02d\n", tm->tm_min, tm->tm_sec);// to print current minutes and seconds
-        s--;
-        seconds--;
+        sec--;
+        secs--;
         wait(1);// to call time delay function
     }
     completeTimer();
