@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/1st Semester Work/Project/FOP project/Totoro Timer-Final/cmake-build-debug"
+			"value" : "d:/1st Semester Work/Project/Totoro_Timer/Totoro Timer-Final/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/1st Semester Work/Project/FOP project/Totoro Timer-Final"
+			"value" : "D:/1st Semester Work/Project/Totoro_Timer/Totoro Timer-Final"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/1st Semester Work/Project/FOP project/Totoro Timer-Final/cmake-build-debug"
+			"value" : "D:/1st Semester Work/Project/Totoro_Timer/Totoro Timer-Final/cmake-build-debug"
 		},
 		{
 			"name" : "Totoro_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/1st Semester Work/Project/FOP project/Totoro Timer-Final"
+			"value" : "D:/1st Semester Work/Project/Totoro_Timer/Totoro Timer-Final"
 		}
 	],
 	"kind" : "cache",
