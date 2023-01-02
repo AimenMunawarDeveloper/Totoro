@@ -1,4 +1,4 @@
-# Install script for directory: D:/1st Semester Work/Project/FOP project/Totoro Timer-Final
+# Install script for directory: D:/1st Semester Work/Project/Totoro_Timer/Totoro Timer-Final
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/1st Semester Work/Project/FOP project/Totoro Timer-Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/1st Semester Work/Project/Totoro_Timer/Totoro Timer-Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
